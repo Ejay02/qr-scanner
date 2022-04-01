@@ -4,7 +4,18 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
+  <qr-scanner/>
 </template>
+
+<script>
+import QrScanner from './components/QrScanner.vue'
+export default {
+  components: { QrScanner },
+  setup() {
+    
+  },
+}
+</script>
 
 <style>
 #app {
